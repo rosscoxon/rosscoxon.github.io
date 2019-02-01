@@ -56,8 +56,8 @@ function search(text) {
     if (text[0] === ';') {
         if (text.indexOf(' ') > -1) {
             switch (option) {
-                case "g":
-                    window.location = "https://www.google.com/search?q=" + subtext;
+                case "d":
+                    window.location = "https://duckduckgo.com/?q=" + subtext;
                     break;
                 case "y":
                     window.location = "https://www.youtube.com/search?q=" + subtext;
@@ -72,14 +72,14 @@ function search(text) {
                     window.location = "https://twitch.tv/" + subtext;
                     break;
                 default:
-                    window.location = "https://duckduckgo.com/?q=" + subtext;
+                    window.location = "https://www.google.co.uk/search?q=" + subtext;
                     break;
             }
         } else {
             var option = text.substr(1);
             switch (option) {
                 case "g":
-                    window.location = "https://www.google.com/";
+                    window.location = "https://www.google.co.uk/";
                     break;
                 case "y":
                     window.location = "https://www.youtube.com/";
@@ -94,7 +94,7 @@ function search(text) {
             }
         }
     } else {
-        window.location = "https://duckduckgo.com/?q=" + text;
+        window.location = "https://www.google.co.uk/search?q=" + text;
     }
 }
 
